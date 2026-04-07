@@ -376,9 +376,9 @@ function doAnimations()
 end
 
 function changeScene()
-	local thisduration = "1.5"
+	local thisduration = 1.5
 	if line["duration"]~=nil then
-		thisduration = line["duration"]
+		thisduration = tonumber(line["duration"])
 	end
 	if line["newscene"]~=nil then
 		PVNtoscene = line["newscene"]
